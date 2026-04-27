@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XXXHost</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="navbar__logo">
+            <p class="hero__description__text"><img src="images/logo.png" alt="Logo"
+                    style="height: 30px; vertical-align: middle; margin-right: 8px; filter: brightness(0);"> XXXHost
+            </p>
+        </div>
+        <div class="navbar__content" id="navCon">
+            <a href="#">Status</a>
+            <a href="#">Services</a>
+            <a href="https://discord.gg/9ddvgX3Arz">Discord</a>
+            <a href="#">Blogs</a>
+
+
+        </div>
+    </nav>
+
+
+    <header class="hero">
+        <div class="news" id="news">
+            <div class="news1">
+            <i class="fa-regular fa-newspaper"></i> News: XXXHost is launching on Wednesday! 
+            </div>
+            <div class="news2">
+                <button id="news__btn" onclick="newsHide()"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+        </div>
+
+        <div class="hero__title">
+            <h1 class="hero__title__1">Build Game Servers,</h1>
+            <span class="hero__title__2">That <span id="heroHigh" class="hero__highlight">Perform.</span></span>
+            <p class="hero__tagline">Blazing Fast, Built For Speed.</p>
+        </div>
+        <div class="hero__description">
+            <p class="hero__description__text">
+                Host game servers that actually perform on <br>
+                XXXHost's infrastructure for cheap prices. Start using us today! <br>
+
+            </p>
+        </div>
+        <div class="hero__btns">
+            <a href="#"><button class="hero__btn hero__btn_primary">Learn More</button></a>
+            <a href="#"><button class="hero__btn hero_btn_secondary">Start For Free</button></a>
+        </div>
+    </header>
+
+
+    <section class="features__section">
+        <div class="features__title scroll-reveal">
+            <h1>What We Offer</h1>
+        </div>
+        <div class="features scroll-reveal stagger-children">
+
+            <div class="features__1">
+                <div class="features__images">
+                    <img src="images/working.jpeg">
+
+                </div>
+                <div class="features__descriptions">
+                    <h3>24/7 Servers</h3>
+                    Our high-availability infrastructure ensures your 24/7 servers remain operational with 99.9% uptime.
+
+                </div>
+            </div>
+            <div class="features__2">
+                <div class="features__images">
+                    <img src="images/servers.jpeg">
+                </div>
+                <div class="features__descriptions">
+                    <h3>DDoS Protection</h3>
+
+                    Advanced DDoS mitigation shields your infrastructure from malicious attacks and traffic spikes.
+                </div>
+            </div>
+            <div class="features__3">
+                <div class="features__images">
+                    <img src="images/server1.jpeg">
+                </div>
+                <div class="features__descriptions">
+                    <h3>Instant Deployment</h3>
+
+                    Deploy your entire network in seconds with our automated dashboard and panel.
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="global__section scroll-reveal">
+        <div class="global__description">
+            <div class="global__title">
+                <h1></i> Available, Everywhere. </h1>
+            </div>
+            <div class="global__content">
+                <div class="global__nodes">
+                    <div class="global__node__info">
+                        <div class="img">
+                            <img src="images/india.png">
+                        </div>
+                        <div class="global__node__description">
+                            <i class="fa-solid fa-location-dot"></i> India
+                        </div>
+                    </div>
+
+                    <div class="global__node__info">
+                        <div class="img">
+                            <img src="images/vt.webp">
+                        </div>
+                        <div class="global__node__description">
+                            <i class="fa-solid fa-location-dot"></i> Vietnam
+                        </div>
+                    </div>
+
+                    <div class="global__node__info">
+                        <div class="img">
+                            <img src="images/ph.png">
+                        </div>
+                        <div class="global__node__description">
+                            <i class="fa-solid fa-location-dot"></i> Philippines
+                        </div>
+                    </div>
+
+                    <div class="global__node__info">
+                        <div class="img">
+                            <img src="images/us.webp">
+                        </div>
+                        <div class="global__node__description">
+                            <i class="fa-solid fa-location-dot"></i> US
+                        </div>
+                    </div>
+                </div>
+                <div class="global__content__description">XXXHost's infrastructure is placed strategically around
+                    the globe so that everyone can play in a good ping.</div>
+
+            </div>
+        </div>
+        <div class="global__map__placeholder">
+            <div id="globeViz"></div>
+        </div>
+
+
+    </section>
+
+    <section class="games__section scroll-reveal">
+        <div class="games__title">
+            <h1>Host your Favourite Games.</h1>
+        </div>
+        <div class="games__grid scroll-reveal stagger-children">
+            <div class="games mc">
+                <img src="images/mc.png">
+                <div class="overlay">Minecraft</div>
+            </div>
+            <div class="games hytale">
+                <img src="images/hytale.jpg">
+                <div class="overlay">Hytale</div>
+            </div>
+            <div class="games terraria">
+                <img src="images/terraria.jpg">
+                <div class="overlay">Terraria</div>
+            </div>
+            <div class="games csgo">
+                <img src="images/csgo.jpg">
+                <div class="overlay">CS:GO / CS2</div>
+            </div>
+            <div class="games rust">
+                <img src="images/rust.jpg">
+                <div class="overlay">Rust</div>
+            </div>
+            <div class="games tf">
+                <img src="images/tf.jpg">
+                <div class="overlay">Team Fortress 2</div>
+            </div>
+            <div class="games ark">
+                <img src="images/arl.jpg">
+                <div class="overlay">ARK: Survival Evolved</div>
+            </div>
+            <div class="games palworld">
+                <img src="images/palworld.jpg">
+                <div class="overlay">Palworld</div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/961f5bb8e9.js" crossorigin="anonymous"></script>
+
+
+    <div class="rotating__section scroll-reveal">
+        <div class="rotating__group">
+            <div class="rt_card"><img src="images/apple.png" alt="Apple"></div>
+            <div class="rt_card"><img src="images/spacex.png" alt="SpaceX"></div>
+            <div class="rt_card"><img src="images/pterodactyl.png" alt="Pterodactyl"></div>
+            <div class="rt_card"><img src="images/google.png" alt="Google"></div>
+            <div class="rt_card"><img src="images/microsoft.png" alt="Microsoft"></div>
+            <div class="rt_card"><img src="images/docker.png" alt="Docker"></div>
+            <div class="rt_card"><img src="images/paypal.png" alt="PayPal"></div>
+        </div>
+        <div aria-hidden="true" class="rotating__group">
+            <div class="rt_card"><img src="images/apple.png" alt="Apple"></div>
+            <div class="rt_card"><img src="images/spacex.png" alt="SpaceX"></div>
+            <div class="rt_card"><img src="images/pterodactyl.png" alt="Pterodactyl"></div>
+            <div class="rt_card"><img src="images/google.png" alt="Google"></div>
+            <div class="rt_card"><img src="images/microsoft.png" alt="Microsoft"></div>
+            <div class="rt_card"><img src="images/docker.png" alt="Docker"></div>
+            <div class="rt_card"><img src="images/paypal.png" alt="PayPal"></div>
+        </div>
+    </div>
+
+    <script>
+        // Scroll Reveal using Intersection Observer
+        const scrollRevealElements = document.querySelectorAll('.scroll-reveal');
+
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.12,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        scrollRevealElements.forEach(el => revealObserver.observe(el));
+    </script>
+
+
+    <section class="reviews__section">
+        <div class="reviews__txt">
+            <h1 class="title">What our Customers Say</h1>
+            <p class="des">Don't just take our word for it. Hear from some of our trusted customers.</p>
+        </div>
+
+        <div class="reviews">
+            <div class="reviews__menu rv-1">
+                <div class="reviews__stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="reviews__menu__text">
+                    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, veniam."
+                </div>
+                <div class="reviews__reviewer">
+                    <div class="reviews__avatar">S</div>
+                    <div class="reviews__reviewer__info">
+                        <span class="reviews__reviewer__name">Serene</span>
+                        <span class="reviews__reviewer__role">Tesla's Co-founder & CEO</span>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews__menu rv-2">
+                <div class="reviews__stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="reviews__menu__text">
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, nihil!"
+                </div>
+                <div class="reviews__reviewer">
+                    <div class="reviews__avatar">A</div>
+                    <div class="reviews__reviewer__info">
+                        <span class="reviews__reviewer__name">Ahmed</span>
+                        <span class="reviews__reviewer__role">Nexar's CEO</span>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews__menu rv-3">
+                <div class="reviews__stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="reviews__menu__text">
+                    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro eos accusantium quia!"
+                </div>
+                <div class="reviews__reviewer">
+                    <div class="reviews__avatar">M</div>
+                    <div class="reviews__reviewer__info">
+                        <span class="reviews__reviewer__name">Matt James</span>
+                        <span class="reviews__reviewer__role">Altare's CEO</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="pricing__section">
+        <div class="pricing__title">
+            <h1 class="title">Choose Your Plan</h1>
+            <p class="des">Choose the perfet plan to start using LixinCloud's services today.</p>
+        </div>
+        <div class="pricing__cards">
+            <div class="pricing__card free">
+                <div class="pricing__name">
+                    <p class="pricing__main">
+                        <span class="a"><i class="fa-solid fa-star"></i> Free Plan</span>
+                    </p>
+                    <p class="pricing__des">Perfect for getting started with zero-cost servers.</p>
+                </div>
+                <div class="pricing__features">
+                    <ul class="features__list" type="none">
+                        <li><i class="fa-regular fa-circle-check"></i>1GB RAM</li>
+                        <li><i class="fa-regular fa-circle-check"></i>2 Cores CPU</li>
+                        <li><i class="fa-regular fa-circle-check"></i>10GB NVMe SSD Storage</li>
+                        <li><i class="fa-regular fa-circle-check"></i>Pterodactyl Panel</li>
+                        <li><i class="fa-regular fa-circle-check"></i>Priority Support</li>
+                        <li><i class="fa-regular fa-circle-check"></i>0.00% Uptime</li>
+                    </ul>
+                </div>
+                <a href="#"><button class="pricing__button">Choose Plan <span class="pricing__hover-price"> - $0.0
+                            Monthly</span></button></a>
+
+
+            </div>
+            <div class="pricing__card pro">
+                <div class="pricing__name">
+                    <p class="pricing__main">
+                        <span class="a"><i class="fa-solid fa-suitcase"></i> Professional Plan</span>
+                    </p>
+                    <p class="pricing__des">Best for hosting professional and big servers. </p>
+                </div>
+                <div class="pricing__features">
+                    <ul class="features__list" type="none">
+                        <li><i class="fa-regular fa-circle-check"></i>16GB RAM</li>
+                        <li><i class="fa-regular fa-circle-check"></i>8 Cores CPU</li>
+                        <li><i class="fa-regular fa-circle-check"></i>300GB NVMe SSD Storage</li>
+                        <li><i class="fa-regular fa-circle-check"></i>Pterodactyl Panel</li>
+                        <li><i class="fa-regular fa-circle-check"></i>Priority+ Support</li>
+                        <li><i class="fa-regular fa-circle-check"></i>99.9% Uptime</li>
+                    </ul>
+                </div>
+                <a href="#"><button class="pricing__button">Choose Plan <span class="pricing__hover-price"> - $39.9
+                            Monthly</span></button></a>
+
+            </div>
+            <div class="pricing__card enterprise">
+                <div class="pricing__name">
+                    <p class="pricing__main">
+                        <span class="a"><i class="fa-solid fa-crown"></i> Enterprise Plan</span>
+                    </p>
+                    <p class="pricing__des">Perfect for critical systems and servers.
+                    </p>
+                </div>
+                <div class="pricing__features">
+                    <ul class="features__list" type="none">
+                        <li><i class="fa-regular fa-circle-check"></i>Unlimited RAM</li>
+                        <li><i class="fa-regular fa-circle-check"></i>Unlimied CPU Cores</li>
+                        <li><i class="fa-regular fa-circle-check"></i>Unlimited NVMe SSD</li>
+                        <li><i class="fa-regular fa-circle-check"></i>Pterodactyl Panel</li>
+                        <li><i class="fa-regular fa-circle-check"></i>Priority++ Support</li>
+                        <li><i class="fa-regular fa-circle-check"></i>99.99% Uptime</li>
+                    </ul>
+                </div>
+                <a href="#"><button class="pricing__button">Choose Plan <span class="pricing__hover-price"> - $XXX
+                            Monthly</span></button></a>
+
+            </div>
+    </section>
+
+    <section class="cta__section">
+        <div class="cta__content">
+            <div class="cta__left">
+                <h1 class="cta__title">Start Using Now</h1>
+                <p class="cta__description">
+                    Deploy high-performance game servers in seconds.<br>
+                    Experience unmatched speed, stability, and control.<br>
+                </p>
+                <div class="cta__buttons">
+                    <button class="cta__btn cta__btn--primary">Get Started</button>
+                </div>
+            </div>
+            <div class="cta__divider">
+                <svg viewBox="0 0 40 200" class="cta__bolt">
+                    <path d="M25 0 L5 90 L20 90 L15 200 L35 110 L20 110 Z" fill="rgba(0,0,0,0.05)" />
+                </svg>
+            </div>
+            <div class="cta__right">
+                <div class="cta__promo">
+                    <h2 class="cta__save">Free Resources</h2>
+                    <p class="cta__coupon__label">USE COUPON CODE</p>
+                    <p class="cta__coupon__code">LIXXIN10</p>
+                </div>
+                <div class="cta__countdown">
+                    <p class="cta__expires">EXPIRES IN</p>
+                    <div class="cta__timer">
+                        <div class="cta__time__block">
+                            <span class="cta__time__value" id="cta-days">00</span>
+                            <span class="cta__time__label">DAYS</span>
+                        </div>
+                        <span class="cta__time__separator">:</span>
+                        <div class="cta__time__block">
+                            <span class="cta__time__value" id="cta-hours">00</span>
+                            <span class="cta__time__label">HRS</span>
+                        </div>
+                        <span class="cta__time__separator">:</span>
+                        <div class="cta__time__block">
+                            <span class="cta__time__value" id="cta-mins">00</span>
+                            <span class="cta__time__label">MIN</span>
+                        </div>
+                        <span class="cta__time__separator">:</span>
+                        <div class="cta__time__block">
+                            <span class="cta__time__value" id="cta-secs">00</span>
+                            <span class="cta__time__label">SEC</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        (function () {
+            const endDate = new Date();
+            endDate.setDate(endDate.getDate() + 3);
+
+            function updateCountdown() {
+                const now = new Date();
+                const diff = endDate - now;
+
+                if (diff <= 0) return;
+
+                const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                const secs = Math.floor((diff % (1000 * 60)) / 1000);
+
+                document.getElementById('cta-days').textContent = String(days).padStart(2, '0');
+                document.getElementById('cta-hours').textContent = String(hours).padStart(2, '0');
+                document.getElementById('cta-mins').textContent = String(mins).padStart(2, '0');
+                document.getElementById('cta-secs').textContent = String(secs).padStart(2, '0');
+            }
+
+            updateCountdown();
+            setInterval(updateCountdown, 1000);
+        })();
+    </script>
+
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer__main">
+            <div class="footer__brand">
+                <div class="footer__logo">
+                    <img src="images/logo.png"
+                        style="height: 40px; vertical-align: middle; margin-right: 8px; filter: brightness(0);"
+                        alt="Logo"> XXXHost
+                </div>
+                <p class="footer__tagline">
+                    High-performance game hosting built for players who demand speed, stability, and total control.
+                </p>
+                <div class="footer__socials">
+                    <a href="https://discord.gg/9ddvgX3Arz" class="footer__social-link" aria-label="Discord"><i
+                            class="fa-brands fa-discord"></i></a>
+                    <a href="#" class="footer__social-link" aria-label="Youtube"><i
+                            class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="footer__social-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="mailto:support@xxxhost.net" class="footer__social-link" aria-label="Email"><i
+                            class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer__links-group">
+                <div class="footer__links-column">
+                    <h4 class="footer__column-title">PRODUCTS</h4>
+                    <a href="https://discord.gg/9ddvgX3Arz" class="footer__link">Game Servers</a>
+                    <a href="https://discord.gg/9ddvgX3Arz" class="footer__link">Application Servers</a>
+                    <a href="https://discord.gg/9ddvgX3Arz" class="footer__link">VPS Servers</a>
+                </div>
+                <div class="footer__links-column">
+                    <h4 class="footer__column-title">COMPANY</h4>
+                    <a href="https://discord.gg/9ddvgX3Arz" class="footer__link">Discord</a>
+                    <a href="#" class="footer__link">Control Panel</a>
+                    <a href="#" class="footer__link">Dashboard</a>
+                </div>
+                <div class="footer__links-column">
+                    <h4 class="footer__column-title">LEGAL</h4>
+                    <a href="#" class="footer__link">Privacy Policy</a>
+                    <a href="#" class="footer__link">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p class="footer__copyright">&copy; 2026 XXXHost. All rights reserved.</p>
+            <p class="footer__quote"><i class="fa-solid fa-quote-left"></i> Game without limits.</p>
+        </div>
+    </footer>
+    <script defer src="https://unpkg.com/globe.gl"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
